@@ -21,19 +21,34 @@
             <p>Um segundo parágrafo é adicionado verticamente, com um espaço entre o anterior.</p>
             <h4>Cursos de programação</h4>
         <!-- Tipos de listas, exemplos do cenceito de tag combinada, onde existem tags que não fazem sentido sem o uso de outras tags -->
-            <!-- ul -> unordered list coloca bullets antes de cada item-->
-        <ul>
+            <!-- ul -> unordered list coloca bullets antes de cada item por padrão e pode ser alterado com o atributo type=""-->
+        <ul type="square">
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
         </ul>
-        <!-- ol -> ordered list  numera cada item da lista-->
-        <ol>
+        <!-- ol -> ordered list  numera cada item da lista. type é um atributo que altera o tipo de ordenação, romano, numérico...-->
+        <ol type="I">
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
         </ol>
-
+        <!-- Listas aninhadas "listas dentro de listas" dentro de uma lista só pode haver tags <li> portanto a lista aninhada deve estar dentro de uma delas. -->
+            <ul>
+                <li>Lista principal:
+                <li>Primeira lista dentro da principal</li>    
+                    <ol>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </li>
+                <li>Segunda lista dentro da principal
+                    <ul>
+                        <li>item</li>
+                        <li>item</li>
+                    </ul>
+                </li>
+            </ul>
     </body>
 
 
