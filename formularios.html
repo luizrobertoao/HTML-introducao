@@ -11,11 +11,11 @@
     <h1>Formulários</h1>
     <form>
         <label for="name">Nome</label>
-        <input type="text" id="name" placeholder="Digite seu nome" name="name">
+        <input type="text" id="name" placeholder="Digite seu nome" name="name" required>
         <br>
         <br>
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="email@me.com" name="email">
+        <input type="email" id="email" placeholder="email@me.com" name="email" required>
         <br>
         <br>
         <label for="senha">Senha</label>
@@ -36,6 +36,24 @@
         <input type="checkbox" id="acao" value="acao" name="genero"><label for="acao">Ação</label>
         <br>
         <input type="checkbox" id="romance" name="genero" value="romance"><label for="romance">Romance</label>
+        <!-- Select, menu com opções pré-definidas -->
+        <br>
+        <br>
+        <label for="pais">Qual o seu país?</label>
+        <br>
+        <select name="pais" id="pais">
+            <option selected disabled>Selecione</option>
+            <option value="BRA">Brasil</option>
+            <option value="ARG">Argentina</option>
+            <option value="UY">Uruguai</option>
+        </select>
+        <!-- Textarea, para um campo onde o usuário pode digitar texto -->
+        <br><br>
+        <label for="mensagem">Mensagem</label>
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="50" rows="5"></textarea>
+        <!-- Tipos de botões -->
+        <br>
         <br>
         <input type="submit" value="Enviar">
         <button type="reset">Apagar</button>
