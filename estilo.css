@@ -1,0 +1,34 @@
+body {
+    font-family: Arial;
+}
+
+/* Pseudo-seletores */
+
+/* modifica quando passa o mouse sobre o elemento */
+input:hover {
+    border-color: orangered;
+}
+
+p:hover {
+    color: red;
+}
+
+/* modifica só quando o campo é selecionado */
+input:focus {
+    width: 400px;
+}
+
+/* modifica o primeiro do tipo */
+p:first-of-type {
+    color: gray;
+}
+
+/* modifica o ultimo do tipo */
+p:last-of-type {
+    color: green;
+}
+
+/* modifica por par ou impar(even ou odd) */
+p:nth-child(odd) {
+    background-color: hotpink;
+}
