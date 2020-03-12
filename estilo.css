@@ -32,3 +32,23 @@ p:last-of-type {
 p:nth-child(odd) {
     background-color: hotpink;
 }
+
+/* PARA O ARQUIVO divs.html */
+
+header {
+    border: 3px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+main {
+    border: 3px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    border: 3px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
