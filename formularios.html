@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Formulários</h1>
     <form>
@@ -20,9 +22,26 @@
         <input type="password" id="senha" name="senha">
         <br>
         <br>
-        <input type="submit" value="enviar">
-        <button type="submit">Enviar</button>
+        <!-- Radio buttons -->
+        <label>Você já foi ao cinema esse ano?</label>
+        <br>
+        <input type="radio" id="sim" value="sim" name="cinema" checked><label for="sim">Sim</label>
+        <br>
+        <input type="radio" id="nao" value="nao" name="cinema"><label for="nao">Não</label>
+        <br>
+        <label for="genero">Qual seu gênero de cinema favorito?</label>
+        <br>
+        <input type="checkbox" id="terror" value="terror" name="genero"><label for="terror">Terror</label>
+        <br>
+        <input type="checkbox" id="acao" value="acao" name="genero"><label for="acao">Ação</label>
+        <br>
+        <input type="checkbox" id="romance" name="genero" value="romance"><label for="romance">Romance</label>
+        <br>
+        <input type="submit" value="Enviar">
+        <button type="reset">Apagar</button>
     </form>
 
+
 </body>
+
 </html>

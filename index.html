@@ -1,68 +1,72 @@
 <!-- abertura do código, diz onde um arquivo html se inicia -->
 <html>
-    <!-- traz toda a configuração do site, charset, idioma...(não visivel ao usuário) -->
-    <head>
-        <!-- Nome do nosso documento Título (aparece na aba do navegador) -->
-        <title>Hello World!</title>
-        <!-- tag de configuração, como por exemplo charset -->
-        <meta charset="utf-8" />
-    </head>
+<!-- traz toda a configuração do site, charset, idioma...(não visivel ao usuário) -->
 
-    <!-- Todo o conteúdo visivel ao usuário -->
-    <body>
-        <!-- Primeiro cabeçalho da página mostrado em negrito e com fonte maior que todo o restante do conteúdo -->
-        <h1>Full Stack Blend</h1>
-        <!-- Sub cabeçalho, também em negrito, mas com fonte menor e assim segue até o h6, formando uma ierarquia de tópicos. -->
-        <h2>Curso de programação</h2>
-        <!-- H3, com exemplo de atributo (align), que traz características de estilo ao conteúdo da tag.
+<head>
+    <!-- Nome do nosso documento Título (aparece na aba do navegador) -->
+    <title>Hello World!</title>
+    <!-- tag de configuração, como por exemplo charset -->
+    <meta charset="utf-8" />
+</head>
+
+<!-- Todo o conteúdo visivel ao usuário -->
+
+<body>
+    <!-- Primeiro cabeçalho da página mostrado em negrito e com fonte maior que todo o restante do conteúdo -->
+    <h1>Full Stack Blend</h1>
+    <!-- Sub cabeçalho, também em negrito, mas com fonte menor e assim segue até o h6, formando uma ierarquia de tópicos. -->
+    <h2>Curso de programação</h2>
+    <!-- H3, com exemplo de atributo (align), que traz características de estilo ao conteúdo da tag.
          -->
-         <h3>Sub-sub cabeçalho.</h3>
-            <p>A tag "p" insere um parágrafo de texto.</p>
-            <p>Um segundo parágrafo é adicionado verticamente, com um espaço entre o anterior.</p>
-            <h4>Cursos de programação</h4>
-        <!-- Tipos de listas, exemplos do cenceito de tag combinada, onde existem tags que não fazem sentido sem o uso de outras tags -->
-            <!-- ul -> unordered list coloca bullets antes de cada item por padrão e pode ser alterado com o atributo type=""-->
-        <ul type="square">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-        </ul>
-        <!-- ol -> ordered list  numera cada item da lista. type é um atributo que altera o tipo de ordenação, romano, numérico...-->
-        <ol type="I">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
+    <h3>Sub-sub cabeçalho.</h3>
+    <p>A tag "p" insere um parágrafo de texto.</p>
+    <p>Um segundo parágrafo é adicionado verticamente, com um espaço entre o anterior.</p>
+    <h4>Cursos de programação</h4>
+    <!-- Tipos de listas, exemplos do cenceito de tag combinada, onde existem tags que não fazem sentido sem o uso de outras tags -->
+    <!-- ul -> unordered list coloca bullets antes de cada item por padrão e pode ser alterado com o atributo type=""-->
+    <ul type="square">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ul>
+    <!-- ol -> ordered list  numera cada item da lista. type é um atributo que altera o tipo de ordenação, romano, numérico...-->
+    <ol type="I">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ol>
+    <!-- Listas aninhadas "listas dentro de listas" dentro de uma lista só pode haver tags <li> portanto a lista aninhada deve estar dentro de uma delas. -->
+    <ul>
+        <li>Lista principal:
+        <li>Primeira lista dentro da principal</li>
+        <ol>
+            <li>item</li>
+            <li>item</li>
         </ol>
-        <!-- Listas aninhadas "listas dentro de listas" dentro de uma lista só pode haver tags <li> portanto a lista aninhada deve estar dentro de uma delas. -->
+        </li>
+        <li>Segunda lista dentro da principal
             <ul>
-                <li>Lista principal:
-                <li>Primeira lista dentro da principal</li>    
-                    <ol>
-                        <li>item</li>
-                        <li>item</li>
-                    </ol>
-                </li>
-                <li>Segunda lista dentro da principal
-                    <ul>
-                        <li>item</li>
-                        <li>item</li>
-                    </ul>
-                </li>
+                <li>item</li>
+                <li>item</li>
             </ul>
+        </li>
+    </ul>
 
-        <!-- Links absolutos -->
-        <!-- Adicionando hiperlinks com a tag "a", também pode ser usada para enviar email usando <a href="mailto:email@desejado" ou telefone com <a href="tel:numerotelaserdiscado" -->
-        <a href="http://www.google.com">Vamos ao google.</a>
-        <!-- Adicionando imagens e usando atributo para alterá-la-->
-        <img src="https://i0.statig.com.br/bancodeimagens/e7/86/hj/e786hj4ij5rsgnaskazifxl76.jpg" align="left" >
-        <!-- Rotas relativas -->
-        <a href="quemsomos.html">Ir para Quem somos.</a>
-        <img src="imagens/porco.png">
-        <!-- Rota relativa para arquivo fora da pasta atual -->
-        <img src="../outroporco.jpg">
-        <!-- Utilizando a tag iframe para incorporar conteúdo de outro site no nosso site -->
-        <iframe src="https://www.digitalhouse.com/br/" width="400" height="1000"></iframe>
-        <!-- Incorporando um vídeo do youtube -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IlXYO4ap9gU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </body>
+    <!-- Links absolutos -->
+    <!-- Adicionando hiperlinks com a tag "a", também pode ser usada para enviar email usando <a href="mailto:email@desejado" ou telefone com <a href="tel:numerotelaserdiscado" -->
+    <a href="http://www.google.com">Vamos ao google.</a>
+    <!-- Adicionando imagens e usando atributo para alterá-la-->
+    <img src="https://i0.statig.com.br/bancodeimagens/e7/86/hj/e786hj4ij5rsgnaskazifxl76.jpg" align="left">
+    <!-- Rotas relativas -->
+    <a href="quemsomos.html">Ir para Quem somos.</a>
+    <img src="imagens/porco.png">
+    <!-- Rota relativa para arquivo fora da pasta atual -->
+    <img src="../outroporco.jpg">
+    <!-- Utilizando a tag iframe para incorporar conteúdo de outro site no nosso site -->
+    <iframe src="https://www.digitalhouse.com/br/" width="400" height="1000"></iframe>
+    <!-- Incorporando um vídeo do youtube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IlXYO4ap9gU" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
 </html>
