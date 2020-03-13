@@ -32,3 +32,14 @@ article {
 span {
     background-color: orangered;
 }
+
+/* Praticando float */
+article {
+    float: left;
+    width: 30%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+section.noticias {
+    overflow: hidden;
+}
